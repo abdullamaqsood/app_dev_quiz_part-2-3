@@ -15,7 +15,7 @@ class _ProductCardState extends State<ProductCard> {
     Colors.redAccent,
     Colors.green.shade200,
     Colors.white,
-    Colors.purple, // hidden (extra) color
+    Colors.purple,
   ];
 
   @override
@@ -34,7 +34,6 @@ class _ProductCardState extends State<ProductCard> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              /// Header Row
               Row(
                 children: [
                   Expanded(
@@ -57,8 +56,6 @@ class _ProductCardState extends State<ProductCard> {
                 ],
               ),
               SizedBox(height: 16),
-
-              /// Product Image
               Stack(
                 children: [
                   Center(
@@ -84,8 +81,6 @@ class _ProductCardState extends State<ProductCard> {
                 ],
               ),
               SizedBox(height: 16),
-
-              /// Info
               Center(
                 child: Column(
                   children: [
@@ -107,8 +102,6 @@ class _ProductCardState extends State<ProductCard> {
                       style: TextStyle(color: Colors.white70),
                     ),
                     SizedBox(height: 12),
-
-                    /// Color Dots (max 4) + "+N more"
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
